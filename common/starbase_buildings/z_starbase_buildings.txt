@@ -905,7 +905,7 @@ transit_hub = {
 				solar_system = {
 					any_system_colony = {
 						exists = owner
-						owner = { is_country_type = default }
+						owner = { is_playable = yes }
 					}
 				}
 			}
@@ -1012,7 +1012,7 @@ trader_proxy_office = {
 				OR = {
 					any_system_colony = {
 						exists = owner
-						owner = { is_country_type = default }
+						owner = { is_playable = yes }
 					}
 					AND = {
 						has_star_flag = enclave
