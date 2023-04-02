@@ -21,6 +21,7 @@ titan = {
 	selectable = { host_has_dlc = "Apocalypse" }
 
 	default_behavior = artillery
+	ship_roles = { artillery gunship }
 
 	prerequisites = { "tech_titans" }
 
@@ -109,4 +110,3 @@ titan = {
 		planet_mult = 0.1
 	}
 }
-

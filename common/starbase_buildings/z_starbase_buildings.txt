@@ -13,10 +13,7 @@ nebula_refinery = {
 			OR = {
 				has_starbase_size >= starbase_starport
 				is_orbital_ring = yes
-				has_starbase_size >= acot_precusor_starbase
-				has_starbase_size >= acot_precusor_sigma_starbase
-				has_starbase_size >= acot_precusor_phanon_starcitadel
-				has_starbase_size >= acot_precusor_theta_starcitadel
+				is_precursor_starbase = yes
 			}
 		}
 		custom_tooltip = {
@@ -82,7 +79,7 @@ nebula_refinery = {
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 150 #use same weight here - ai weighting is done in starbase_types.txt
 	}
 }
 
@@ -104,10 +101,7 @@ offworld_trading_company = {
 			fail_text = "requires_starport"
 			OR = {
 				has_starbase_size >= starbase_starport
-				has_starbase_size >= acot_precusor_starbase
-				has_starbase_size >= acot_precusor_sigma_starbase
-				has_starbase_size >= acot_precusor_phanon_starcitadel
-				has_starbase_size >= acot_precusor_theta_starcitadel
+				is_precursor_starbase = yes
 			}
 		}
 		OR = {
@@ -168,10 +162,7 @@ titan_yards = {
 			fail_text = "requires_citadel"
 			OR = {
 				has_starbase_size >= starbase_citadel
-				has_starbase_size >= acot_precusor_starbase
-				has_starbase_size >= acot_precusor_sigma_starbase
-				has_starbase_size >= acot_precusor_phanon_starcitadel
-				has_starbase_size >= acot_precusor_theta_starcitadel
+				is_precursor_starbase = yes
 			}
 		}
 		OR = {
@@ -199,12 +190,12 @@ titan_yards = {
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 200 #use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			factor = 0
 			count_starbase_modules = {
 				type = shipyard
-				count < 2
+				count < 3
 			}
 		}
 		modifier = {
@@ -240,10 +231,7 @@ colossus_yards = {
 			fail_text = "requires_citadel"
 			OR = {
 				has_starbase_size >= starbase_citadel
-				has_starbase_size >= acot_precusor_starbase
-				has_starbase_size >= acot_precusor_sigma_starbase
-				has_starbase_size >= acot_precusor_phanon_starcitadel
-				has_starbase_size >= acot_precusor_theta_starcitadel
+				is_precursor_starbase = yes
 			}
 		}
 		OR = {
@@ -273,12 +261,12 @@ colossus_yards = {
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 10000 #use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			factor = 0
 			count_starbase_modules = {
 				type = shipyard
-				count < 2
+				count < 3
 			}
 		}
 		modifier = {
@@ -308,10 +296,7 @@ black_hole_observatory = {
 			OR = {
 				has_starbase_size >= starbase_starport
 				is_orbital_ring = yes
-				has_starbase_size >= acot_precusor_starbase
-				has_starbase_size >= acot_precusor_sigma_starbase
-				has_starbase_size >= acot_precusor_phanon_starcitadel
-				has_starbase_size >= acot_precusor_theta_starcitadel
+				is_precursor_starbase = yes
 			}
 		}
 		custom_tooltip = {
@@ -359,10 +344,10 @@ black_hole_observatory = {
 
 	show_in_tech = "tech_sensors_3"
 
-	ai_build_at_chokepoint = no
+	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 250 #use same weight here - ai weighting is done in starbase_types.txt
 	}
 }
 
@@ -384,10 +369,7 @@ deep_space_black_site = {
 			fail_text = "requires_starport"
 			OR = {
 				has_starbase_size >= starbase_starport
-				has_starbase_size >= acot_precusor_starbase
-				has_starbase_size >= acot_precusor_sigma_starbase
-				has_starbase_size >= acot_precusor_phanon_starcitadel
-				has_starbase_size >= acot_precusor_theta_starcitadel
+				is_precursor_starbase = yes
 			}
 		}
 		custom_tooltip = {
@@ -422,10 +404,10 @@ deep_space_black_site = {
 
 	show_in_tech = "tech_living_state"
 
-	ai_build_at_chokepoint = no
+	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 150 #use same weight here - ai weighting is done in starbase_types.txt
 	}
 }
 
@@ -447,10 +429,7 @@ curator_think_tank = {
 			fail_text = "requires_starport"
 			OR = {
 				has_starbase_size >= starbase_starport
-				has_starbase_size >= acot_precusor_starbase
-				has_starbase_size >= acot_precusor_sigma_starbase
-				has_starbase_size >= acot_precusor_phanon_starcitadel
-				has_starbase_size >= acot_precusor_theta_starcitadel
+				is_precursor_starbase = yes
 			}
 		}
 		custom_tooltip = {
@@ -517,7 +496,7 @@ curator_think_tank = {
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 150 #use same weight here - ai weighting is done in starbase_types.txt
 	}
 }
 
@@ -539,10 +518,7 @@ art_college = {
 			fail_text = "requires_starport"
 			OR = {
 				has_starbase_size >= starbase_starport
-				has_starbase_size >= acot_precusor_starbase
-				has_starbase_size >= acot_precusor_sigma_starbase
-				has_starbase_size >= acot_precusor_phanon_starcitadel
-				has_starbase_size >= acot_precusor_theta_starcitadel
+				is_precursor_starbase = yes
 			}
 		}
 		custom_tooltip = {
@@ -605,7 +581,7 @@ art_college = {
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 150 #use same weight here - ai weighting is done in starbase_types.txt
 	}
 }
 
@@ -627,10 +603,7 @@ salvager_workshop = {
 			fail_text = "requires_starport"
 			OR = {
 				has_starbase_size >= starbase_starport
-				has_starbase_size >= acot_precusor_starbase
-				has_starbase_size >= acot_precusor_sigma_starbase
-				has_starbase_size >= acot_precusor_phanon_starcitadel
-				has_starbase_size >= acot_precusor_theta_starcitadel
+				is_precursor_starbase = yes
 			}
 		}
 		custom_tooltip = {
@@ -717,10 +690,7 @@ shroud_beacon = {
 			fail_text = "requires_starport"
 			OR = {
 				has_starbase_size >= starbase_starport
-				has_starbase_size >= acot_precusor_starbase
-				has_starbase_size >= acot_precusor_sigma_starbase
-				has_starbase_size >= acot_precusor_phanon_starcitadel
-				has_starbase_size >= acot_precusor_theta_starcitadel
+				is_precursor_starbase = yes
 			}
 		}
 		custom_tooltip = {
@@ -834,9 +804,7 @@ transit_hub = {
 
 	potential = {
 		exists = owner
-		owner = {
-			has_technology = tech_hyper_drive_2
-		}
+		owner = { has_technology = tech_hyper_drive_2 }
 	}
 
 	possible = {
@@ -845,19 +813,12 @@ transit_hub = {
 			OR = {
 				has_starbase_size >= starbase_starport
 				is_orbital_ring = yes
-				has_starbase_size >= acot_precusor_starbase
-				has_starbase_size >= acot_precusor_sigma_starbase
-				has_starbase_size >= acot_precusor_phanon_starcitadel
-					has_starbase_size >= acot_precusor_theta_starcitadel
-		}
+				is_precursor_starbase = yes
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_colonized_planet"
-			solar_system = {
-				any_system_colony = {
-					is_owned_by = from
-				}
-			}
+			solar_system = { any_system_colony = { is_owned_by = from } }
 		}
 		solar_system = {
 			count_starbase_buildings = {
@@ -880,19 +841,16 @@ transit_hub = {
 
 	resources = {
 		category = starbase_buildings
-		cost = {
-			alloys = 100
-		}
+		cost = { alloys = 100 }
 
-		upkeep = {
-			energy = 3
-		}
+		upkeep = { energy = 3 }
 	}
 
 	system_modifier = {
 		planet_resettlement_unemployed_mult = 1.00
+		show_only_custom_tooltip = no
+		custom_tooltip = "sm_transit_hub_migrate_effect_desc"
 	}
-
 	show_in_tech = "tech_hyper_drive_2"
 
 	ai_build_at_chokepoint = yes
@@ -928,10 +886,7 @@ command_center = {
 			OR = {
 				has_starbase_size >= starbase_starfortress
 				has_starbase_size >= orbital_ring_tier_3
-				has_starbase_size >= acot_precusor_starbase
-				has_starbase_size >= acot_precusor_sigma_starbase
-				has_starbase_size >= acot_precusor_phanon_starcitadel
-				has_starbase_size >= acot_precusor_theta_starcitadel
+				is_precursor_starbase = yes
 			}
 		}
 		solar_system = {
@@ -971,6 +926,10 @@ command_center = {
 	ai_build_outside_chokepoint = no
 	ai_weight = {
 		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		modifier = {
+			factor = 0
+			years_passed < 30
+		}
 	}
 }
 
@@ -998,10 +957,7 @@ trader_proxy_office = {
 			fail_text = "requires_starport"
 			OR = {
 				has_starbase_size >= starbase_starport
-				has_starbase_size >= acot_precusor_starbase
-				has_starbase_size >= acot_precusor_sigma_starbase
-				has_starbase_size >= acot_precusor_phanon_starcitadel
-				has_starbase_size >= acot_precusor_theta_starcitadel
+				is_precursor_starbase = yes
 			}
 		}
 		NOT = { has_starbase_building = trader_proxy_office }
@@ -1057,10 +1013,10 @@ trader_proxy_office = {
 		trade_value_add = 5
 	}
 
-	ai_build_at_chokepoint = no
+	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 200 #use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			factor = 0
 			OR = {
@@ -1092,10 +1048,7 @@ dragon_hatchery = {
 			fail_text = "requires_citadel"
 			OR = {
 				has_starbase_size >= starbase_citadel
-				has_starbase_size >= acot_precusor_starbase
-				has_starbase_size >= acot_precusor_sigma_starbase
-				has_starbase_size >= acot_precusor_phanon_starcitadel
-				has_starbase_size >= acot_precusor_theta_starcitadel
+				is_precursor_starbase = yes
 			}
 		}
 		OR = {
@@ -1153,10 +1106,7 @@ ice_mining_station = {
 			fail_text = "requires_starport"
 			OR = {
 				has_starbase_size >= starbase_starport
-				has_starbase_size >= acot_precusor_starbase
-				has_starbase_size >= acot_precusor_sigma_starbase
-				has_starbase_size >= acot_precusor_phanon_starcitadel
-				has_starbase_size >= acot_precusor_theta_starcitadel
+				is_precursor_starbase = yes
 			}
 		}
 
@@ -1218,10 +1168,7 @@ offspring_outlook = {
 			fail_text = "requires_starport"
 			OR = {
 				has_starbase_size >= starbase_starport
-				has_starbase_size >= acot_precusor_starbase
-				has_starbase_size >= acot_precusor_sigma_starbase
-				has_starbase_size >= acot_precusor_phanon_starcitadel
-				has_starbase_size >= acot_precusor_theta_starcitadel
+				is_precursor_starbase = yes
 			}
 		}
 	}
@@ -1263,10 +1210,7 @@ mercenary_garrison = {
 			fail_text = "requires_starport"
 			OR = {
 				has_starbase_size >= starbase_starport
-				has_starbase_size >= acot_precusor_starbase
-				has_starbase_size >= acot_precusor_sigma_starbase
-				has_starbase_size >= acot_precusor_phanon_starcitadel
-				has_starbase_size >= acot_precusor_theta_starcitadel
+				is_precursor_starbase = yes
 			}
 		}
 		custom_tooltip = {
