@@ -1,0 +1,25 @@
+is_playable = {
+	OR = {
+		is_country_type = default
+		# Darkspace
+		is_country_type = ds_nomads
+		# Ethics & Civics Infinity
+		is_country_type = uo_une_member_active
+		# Scripted Triggers Undercoat
+		has_country_flag = is_playable
+		# The Empty Vagrant
+		is_country_type = default_ev
+		# ZOFE
+		is_zofe_country = yes
+	}
+}
+zaxv_has_shipyard = {
+	OR = {
+		has_starbase_module = shipyard
+		has_starbase_module = acot_orbital_ring_shipyard
+		has_starbase_module = acot_starbase_shipyard
+		has_starbase_module = acot_sigma_starbase_shipyard
+		has_starbase_module = acot_phanon_starbase_shipyard
+		has_starbase_module = virtual_shipyard_uplink
+	}
+}

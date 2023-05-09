@@ -166,9 +166,25 @@ titan_yards = {
 			}
 		}
 		OR = {
-			has_starbase_module = shipyard
+			zaxv_has_shipyard = yes
 			starbase_buildable_is_in_queue_before = {
 				first = shipyard
+				second = titan_yards
+			}
+			starbase_buildable_is_in_queue_before = {
+				first = acot_starbase_shipyard
+				second = titan_yards
+			}
+			starbase_buildable_is_in_queue_before = {
+				first = acot_sigma_starbase_shipyard
+				second = titan_yards
+			}
+			starbase_buildable_is_in_queue_before = {
+				first = acot_phanon_starbase_shipyard
+				second = titan_yards
+			}
+			starbase_buildable_is_in_queue_before = {
+				first = virtual_shipyard_uplink
 				second = titan_yards
 			}
 		}
@@ -235,9 +251,25 @@ colossus_yards = {
 			}
 		}
 		OR = {
-			has_starbase_module = shipyard
+			zaxv_has_shipyard = yes
 			starbase_buildable_is_in_queue_before = {
 				first = shipyard
+				second = colossus_yards
+			}
+			starbase_buildable_is_in_queue_before = {
+				first = acot_starbase_shipyard
+				second = colossus_yards
+			}
+			starbase_buildable_is_in_queue_before = {
+				first = acot_sigma_starbase_shipyard
+				second = colossus_yards
+			}
+			starbase_buildable_is_in_queue_before = {
+				first = acot_phanon_starbase_shipyard
+				second = colossus_yards
+			}
+			starbase_buildable_is_in_queue_before = {
+				first = virtual_shipyard_uplink
 				second = colossus_yards
 			}
 		}
@@ -1052,9 +1084,29 @@ dragon_hatchery = {
 			}
 		}
 		OR = {
-			has_starbase_module = shipyard
+			zaxv_has_shipyard = yes
 			starbase_buildable_is_in_queue_before = {
 				first = shipyard
+				second = dragon_hatchery
+			}
+			starbase_buildable_is_in_queue_before = {
+				first = acot_orbital_ring_shipyard
+				second = dragon_hatchery
+			}
+			starbase_buildable_is_in_queue_before = {
+				first = acot_starbase_shipyard
+				second = dragon_hatchery
+			}
+			starbase_buildable_is_in_queue_before = {
+				first = acot_sigma_starbase_shipyard
+				second = dragon_hatchery
+			}
+			starbase_buildable_is_in_queue_before = {
+				first = acot_phanon_starbase_shipyard
+				second = dragon_hatchery
+			}
+			starbase_buildable_is_in_queue_before = {
+				first = virtual_shipyard_uplink
 				second = dragon_hatchery
 			}
 		}
