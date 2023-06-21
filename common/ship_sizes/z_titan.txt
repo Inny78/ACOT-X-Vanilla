@@ -64,13 +64,9 @@ titan = {
 					is_scope_type = starbase
 					OR = {
 						has_starbase_size >= starbase_citadel
-						has_starbase_size >= acot_precusor_starbase
-						has_starbase_size >= acot_precusor_sigma_starbase
-						has_starbase_size >= acot_precusor_phanon_starcitadel
-						has_starbase_size >= acot_precusor_theta_starcitadel
+						is_precursor_starbase = yes
 					}
 				}
-#				is_ship_size = enclave_mercenary_station
 			}
 		}
 		custom_tooltip = {
@@ -87,7 +83,6 @@ titan = {
 					is_scope_type = starbase
 					has_starbase_building = titan_yards
 				}
-#				is_ship_size = enclave_mercenary_station
 			}
 		}
 	}

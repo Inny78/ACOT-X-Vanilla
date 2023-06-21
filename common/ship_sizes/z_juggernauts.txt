@@ -57,10 +57,7 @@ juggernaut = {
 					is_scope_type = starbase
 					OR = {
 						has_starbase_size >= starbase_citadel
-						has_starbase_size >= acot_precusor_starbase
-						has_starbase_size >= acot_precusor_sigma_starbase
-						has_starbase_size >= acot_precusor_phanon_starcitadel
-						has_starbase_size >= acot_precusor_theta_starcitadel
+						is_precursor_starbase = yes
 					}
 				}
 			}
