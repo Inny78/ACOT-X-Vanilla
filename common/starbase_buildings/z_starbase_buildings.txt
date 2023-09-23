@@ -93,7 +93,7 @@ offworld_trading_company = {
 			has_technology = tech_space_trading
 			is_gestalt = no
 		}
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -154,7 +154,7 @@ titan_yards = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_titans }
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -239,7 +239,7 @@ colossus_yards = {
 				has_technology = tech_btc_1 # star-eater
 			}
 		}
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -393,7 +393,7 @@ deep_space_black_site = {
 			has_technology = tech_living_state
 			NOT = { has_ethic = ethic_gestalt_consciousness }
 		}
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -453,7 +453,7 @@ curator_think_tank = {
 			is_homicidal = no
 			has_country_flag = curator_intro
 		}
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -542,7 +542,7 @@ art_college = {
 			is_homicidal = no
 			has_country_flag = enclave_artist_encountered
 		}
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -627,7 +627,7 @@ salvager_workshop = {
 			is_homicidal = no
 			has_country_flag = salvager_enclave_diplomacy_engaged
 		}
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -714,7 +714,7 @@ shroud_beacon = {
 			has_country_flag = shroudwalker_enclave_diplomacy_engaged
 			has_country_flag = shroudwalker_enclave_bought_shroud_beacon
 		}
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -981,7 +981,7 @@ trader_proxy_office = {
 				has_fleet_flag = trader_enclave_station
 			}
 		}
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -1254,7 +1254,7 @@ mercenary_garrison = {
 			is_homicidal = no
 			has_country_flag = mercenary_enclave_diplomacy_engaged
 		}
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
